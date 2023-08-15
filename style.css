@@ -1,0 +1,285 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    vertical-align: center;
+}
+
+/* ========== */
+
+/* 為什麼 * 不適用套用所有字型 ? */
+body{
+    background-color: black;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.nav, .content {
+    display: flex;
+}
+
+.grey{
+    color: #D1D1D1;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.mt-28{
+    margin-top: 28px;
+}
+
+.mt-32{
+    margin-top: 32px;
+}
+
+.mt-36{
+    margin-top: 36px;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.mr-16{
+    margin-right: 16px;
+}
+    
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.mr-24{
+    margin-right: 24px;
+}
+
+.my-40{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.my-96{
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.my-160{
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.p-50{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.py-96{
+    padding-top:96px;
+    padding-bottom:96px;
+}
+
+.py-160{
+    padding-top:160px;
+    padding-bottom:160px;
+}
+h1{
+    font-size: 128px;
+    color: #00FFA3;
+    text-align: right;
+    line-height: 150%;
+}
+
+h2{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.avatar{
+    /* display: inline-block; */
+    max-width: 636px;
+    height: auto;
+    margin-top: 72px;
+    margin-bottom: 72px;;
+}
+
+.hello-text{
+    align-self: center;
+    width: 636px;
+}
+
+.ml-auto{
+    margin-left: auto;
+    text-align: right;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: white;
+    vertical-align: center;
+    border-radius: 32px;
+}
+
+.black-button{
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: black;
+    vertical-align: center;
+    border-radius: 32px; 
+}
+
+
+
+.intro{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+}
+
+.about{
+    background-color: white;
+}
+
+.cards{
+    display: flex;
+    width: 636px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card{
+    width: calc(46% - 12px);
+    
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #E3E3E3;
+    /* box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08); */
+}
+
+.card-title{
+    color: #15161D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.card-text{
+    color: #15161D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.about-text{
+    width: 526px;
+}
+
+.social-icon:hover{
+    border-radius: 40px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project{
+    background-color: white;
+}
+
+.project-title{
+    width: 746px;
+    margin-left: auto;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.self-start{
+    align-self: flex-start;
+}
+
+.self-end{
+    align-self: flex-end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
